@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../home/home.html">HOME</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../home/content_num.html">目次(ID順)</a></li><li class="chapter-item expanded "><a href="../../../home/diff.html">目次(難易度順)</a></li></ol></li><li class="chapter-item expanded "><a href="../../../editorial/template.html">問題一覧</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../editorial/001-100/001-010/001.html">001.敬語 - 100</a></li><li class="chapter-item expanded "><a href="../../../editorial/101-200/181-190/184.html" class="active">184.何通り？ - 500</a></li><li class="chapter-item expanded "><a href="../../../editorial/201-300/211-220/220.html">220.Coprime - 500</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../home/home.html">HOME</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../home/content_num.html">目次(ID順)</a></li><li class="chapter-item expanded "><a href="../../../home/diff.html">目次(難易度順)</a></li></ol></li><li class="chapter-item expanded "><a href="../../../editorial/template.html">問題一覧</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../editorial/001-100/001-010/001.html">001.敬語 - 100</a></li><li class="chapter-item expanded "><a href="../../../editorial/101-200/161-170/167.html">167.あと何回？ - 100</a></li><li class="chapter-item expanded "><a href="../../../editorial/101-200/181-190/184.html" class="active">184.何通り？ - 500</a></li><li class="chapter-item expanded "><a href="../../../editorial/201-300/211-220/220.html">220.Coprime - 500</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -132,14 +132,45 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#no184-何通り---500" id="no184-何通り---500">No.184 何通り？ - 500</a></h1>
+                        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        }
+    });
+</script>
+<h1><a class="header" href="#no184-何通り---500" id="no184-何通り---500">No.184 何通り？ - 500</a></h1>
+<h2><a class="header" href="#問題文" id="問題文">問題文</a></h2>
+<p>ピッピ君は駄菓子屋でお菓子を買おうとしています。<br>
+この駄菓子屋では、2つのお菓子を買って、その値段が100円以上のとき、アヒルの人形がおまけとしてついてきます。<br>
+ピッピ君はアヒルが大好きなので、どのような買い方をすればアヒルの人形をもらえるか知りたくなりました。<br>
+お菓子の種類はn種類で、その値段がsnackという配列で与えられるので、アヒルの人形をもらえる買い方が何通りあるか調べるプログラムを作ってください。<br>
+同じお菓子を2つ買うこともできます。</p>
+<h3><a class="header" href="#制約" id="制約">制約</a></h3>
+<p>・お菓子の種類は30種類以内<br>
+・お菓子の値段は全て100円未満</p>
+<h3><a class="header" href="#必要な変数" id="必要な変数">必要な変数</a></h3>
+<pre><code>n
+snack
+</code></pre>
+<h3><a class="header" href="#入力例" id="入力例">入力例</a></h3>
+<pre><code>n = 3
+snack = [60, 40, 70]
+</code></pre>
+<h3><a class="header" href="#出力例" id="出力例">出力例</a></h3>
+<pre><code>5
+</code></pre>
+<p><code>[60, 60], [60, 40], [60, 70], [40, 70], [70, 70]</code>の5通りの選び方が考えられます。</p>
+<h2><a class="header" href="#解説" id="解説">解説</a></h2>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../../../editorial/001-100/001-010/001.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../editorial/101-200/161-170/167.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
@@ -157,7 +188,7 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../../../editorial/001-100/001-010/001.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../../../editorial/101-200/161-170/167.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 

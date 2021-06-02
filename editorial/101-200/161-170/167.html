@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>220.Coprime - 500 - トイプロ解説記事保管庫</title>
+        <title>167.あと何回？ - 100 - トイプロ解説記事保管庫</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../home/home.html">HOME</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../home/content_num.html">目次(ID順)</a></li><li class="chapter-item expanded "><a href="../../../home/diff.html">目次(難易度順)</a></li></ol></li><li class="chapter-item expanded "><a href="../../../editorial/template.html">問題一覧</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../editorial/001-100/001-010/001.html">001.敬語 - 100</a></li><li class="chapter-item expanded "><a href="../../../editorial/101-200/161-170/167.html">167.あと何回？ - 100</a></li><li class="chapter-item expanded "><a href="../../../editorial/101-200/181-190/184.html">184.何通り？ - 500</a></li><li class="chapter-item expanded "><a href="../../../editorial/201-300/211-220/220.html" class="active">220.Coprime - 500</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../home/home.html">HOME</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../home/content_num.html">目次(ID順)</a></li><li class="chapter-item expanded "><a href="../../../home/diff.html">目次(難易度順)</a></li></ol></li><li class="chapter-item expanded "><a href="../../../editorial/template.html">問題一覧</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../editorial/001-100/001-010/001.html">001.敬語 - 100</a></li><li class="chapter-item expanded "><a href="../../../editorial/101-200/161-170/167.html" class="active">167.あと何回？ - 100</a></li><li class="chapter-item expanded "><a href="../../../editorial/101-200/181-190/184.html">184.何通り？ - 500</a></li><li class="chapter-item expanded "><a href="../../../editorial/201-300/211-220/220.html">220.Coprime - 500</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -132,88 +132,46 @@
 
                 <div id="content" class="content">
                     <main>
-                        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+                        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <script type="text/x-mathjax-config">
- MathJax.Hub.Config({
- tex2jax: {
- inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- }
- });
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        }
+    });
 </script>
-<h1><a class="header" href="#no220-coprime---500" id="no220-coprime---500">No.220 Coprime - 500</a></h1>
+<h1><a class="header" href="#no167-何通り---100" id="no167-何通り---100">No.167 何通り？ - 100</a></h1>
 <h2><a class="header" href="#問題文" id="問題文">問題文</a></h2>
-<p>ピッピ君は2つの整数AとBを見つけました。<br>
-AをB回掛けた数(AのB乗)と、BをA回掛けた数(BのA乗)が互いに素であるか判定してください。<br>
-互いに素な場合はYes、互いに素でない場合はNoと出力してください。<br>
-※この問題、制約で5秒以内に実行可能なプログラムは作成可能です。</p>
+<p>ピッピくんとらいむくんはテトリスをして遊んでいます。<br>
+15回勝負をして、勝った回数が多い方がジュースをもらえます。<br>
+今ピッピくんはA回、らいむくんはB回勝っています。<br>
+ピッピくんはどうしてもジュースが欲しいので、最小で何回勝てばジュースをもらえるか知りたくなりました。<br>
+ピッピくんが最小であと何回勝つ必要があるか教えてあげるプログラムをつくろう。</p>
 <h3><a class="header" href="#制約" id="制約">制約</a></h3>
 <ul>
-<li>$1 \leqq A, B \leqq 10^9$</li>
+<li>$1 \leqq A \leqq 7$</li>
+<li>$1 \leqq B \leqq 7$</li>
 </ul>
 <h3><a class="header" href="#必要な変数" id="必要な変数">必要な変数</a></h3>
 <pre><code>A
 B
 </code></pre>
-<h3><a class="header" href="#入力例1" id="入力例1">入力例.1</a></h3>
-<pre><code>A = 2
+<h3><a class="header" href="#入力例" id="入力例">入力例</a></h3>
+<pre><code>A = 4
 B = 5
 </code></pre>
-<h3><a class="header" href="#出力例1" id="出力例1">出力例.1</a></h3>
-<pre><code>Yes
-</code></pre>
-<h3><a class="header" href="#入力例2" id="入力例2">入力例.2</a></h3>
-<pre><code>A = 10
-B = 8
-</code></pre>
-<h3><a class="header" href="#出力例2" id="出力例2">出力例.2</a></h3>
-<pre><code>No
+<h3><a class="header" href="#出力例" id="出力例">出力例</a></h3>
+<pre><code>7
 </code></pre>
 <h2><a class="header" href="#解説" id="解説">解説</a></h2>
-<h3><a class="header" href="#誤答例" id="誤答例">誤答例</a></h3>
-<p>単純な解法としては実際に$A^B$、$B^A$を計算し、<br>
-その最大公約数が1かどうか判定する方法が考えられます。<br>
-この場合、次のようなコードになります。</p>
-<pre><code class="language-py">import math
-
-A = 2
-B = 5
-
-if math.gcd(pow(A, B), pow(B, A)) == 1:
-    print(&quot;Yes&quot;)
-else:
-    print(&quot;No&quot;)
-</code></pre>
-<p>「なんだ、これだけで解けるんじゃないか」と思うかもしれませんが、これで答え合わせをしてみると…
-<img src="https://storage.googleapis.com/zenn-user-upload/7y8sg3bxg0q6cq2vswzau240nk1i" alt="" />
-長い時間待っても答え合わせが終わりません。
-何が起こっているのでしょうか。</p>
-<h3><a class="header" href="#出てくる数字について" id="出てくる数字について">出てくる数字について</a></h3>
-<p>この問題では制約が$1 \leqq A, B \leqq 10^9$となっています。<br>
-この場合、$A^B$を計算する時に最大で$10^{9 \times 10^9}$という途方もない数値になってしまいます。<br>
-トイプロでは処理に5秒以上かかる場合、答え合わせが中断されるようになっているため、この解法では問題を解けないということになります。</p>
-<h3><a class="header" href="#想定解" id="想定解">想定解</a></h3>
-<p>「$A^B$と$B^A$が互いに素であるか」という問題を言い換えることはできないでしょうか？
-実は、互いに素である整数の性質として、以下のようなものがあります。</p>
-<blockquote>
-<p>$A, Bが整数であり、n, mが自然数のとき、$
-$AとBが互いに素であるならばA^nとB^mも互いに素である$
-$また、逆にA^nとB^mが互いに素であるならば、AとBも互いに素である$</p>
-</blockquote>
-<p>これはAとBが互いに素である場合、共通の素因数を持っていないということであり、<br>
-ある数字をべき乗してもその素因数の種類は変わらないという性質から導くことができます。<br><br>
-さて、以上のことを踏まえると、$A^B$と$B^A$が互いに素か判定するには$A$と$B$が互いに素か判定すれば良いということになります。<br>
+<p>問題文をよく読むと、「15回勝負をする」と書いてあります。つまり、8回勝てばその時点でピッピ君の勝利です。<br>
+また、制約にAとBが7以下であると書いてあることから、単純に8-Aを計算すれば答えが出せることになります。(Bの数値は使わなくても答えが出せます。)<br>
 実装例は以下の通りです。</p>
-<pre><code class="language-python">import math
-
-A = 2
+<pre><code class="language-py">A = 4
 B = 5
 
-if math.gcd(A, B) == 1:
-    print(&quot;Yes&quot;)
-else:
-    print(&quot;No&quot;)
+print(8 - A)
 </code></pre>
 
                     </main>
@@ -221,11 +179,15 @@ else:
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../../../editorial/101-200/181-190/184.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../../editorial/001-100/001-010/001.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
+                        
+                            <a rel="next" href="../../../editorial/101-200/181-190/184.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -235,11 +197,15 @@ else:
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../../../editorial/101-200/181-190/184.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../../../editorial/001-100/001-010/001.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
+                
+                    <a rel="next" href="../../../editorial/101-200/181-190/184.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
