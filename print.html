@@ -278,42 +278,16 @@
 <h2><a class="header" href="#解説" id="解説">解説</a></h2>
 <p>ｳｵｵｵｵｵｵｵｵｵｵ</p>
 <h1><a class="header" href="#no001-敬語---100" id="no001-敬語---100">No.001 敬語 - 100</a></h1>
-<h2><a class="header" href="#問題文-1" id="問題文-1">問題文</a></h2>
-<p>太郎君は、先輩に敬語を使うことができません。先輩を呼び捨てしてしまうのです。<br>
-これを見かねたあなたは、入力したものに「さん」とつけてくれるプログラムを開発することにしました。<br><br>
-上記のプログラムを作ってみよう！</p>
-<h3><a class="header" href="#必要な変数" id="必要な変数">必要な変数</a></h3>
-<pre><code>name
-</code></pre>
-<h3><a class="header" href="#入力例-1" id="入力例-1">入力例</a></h3>
-<pre><code>name = &quot;あきら&quot;
-</code></pre>
-<h3><a class="header" href="#出力例-1" id="出力例-1">出力例</a></h3>
-<pre><code>あきらさん
-</code></pre>
-<h2><a class="header" href="#解説-1" id="解説-1">解説</a></h2>
 <p>Pythonでは文字列同士の足し算をすることで文字列をつなぎ合わせることができます。
 例えば、次のように実装すればこの問題を解くことができます。</p>
+<h3><a class="header" href="#実装例" id="実装例">実装例</a></h3>
 <pre><code class="language-py">name = &quot;あきら&quot;
 
 print(name + &quot;さん&quot;)
 </code></pre>
 <h1><a class="header" href="#no002-進むべき方向---100" id="no002-進むべき方向---100">No.002 進むべき方向 - 100</a></h1>
-<h2><a class="header" href="#問題文-2" id="問題文-2">問題文</a></h2>
-<p>マー君は散歩をしていたらある分かれ道に出会いました。<br>
-マー君が１８才未満だったら右の道へ、１８才以上だったら左の道へ進みます。<br>
-年齢を入力してマー君が右か左のどちらに進むのか判断して進むべき方向をprintしてください</p>
-<h3><a class="header" href="#必要な変数-1" id="必要な変数-1">必要な変数</a></h3>
-<pre><code>age
-</code></pre>
-<h3><a class="header" href="#入力例-2" id="入力例-2">入力例</a></h3>
-<pre><code>age = 17
-</code></pre>
-<h3><a class="header" href="#出力例-2" id="出力例-2">出力例</a></h3>
-<pre><code>右
-</code></pre>
-<h2><a class="header" href="#解説-2" id="解説-2">解説</a></h2>
 <p>条件分岐なので、if文を使います。問題文の通りに実装しましょう。</p>
+<h3><a class="header" href="#実装例-1" id="実装例-1">実装例</a></h3>
 <pre><code class="language-py">age = 17
 if age &lt; 18:
     print('右')
@@ -321,21 +295,8 @@ else:
     print('左')
 </code></pre>
 <h1><a class="header" href="#no003-分の概念---100" id="no003-分の概念---100">No.003 分の概念 - 100</a></h1>
-<h2><a class="header" href="#問題文-3" id="問題文-3">問題文</a></h2>
-<p>太郎君は、時間の「分」の概念がわかりません。<br>
-そのため、「30分を0.5時間」、「90分を1.5時間」のように表現してしまいます。<br>
-そこで、あなたは「時間」を「分」に直すプログラムを作ることにしました。</p>
-<h3><a class="header" href="#必要な変数-2" id="必要な変数-2">必要な変数</a></h3>
-<pre><code>hour
-</code></pre>
-<h3><a class="header" href="#入力例-3" id="入力例-3">入力例</a></h3>
-<pre><code>hour = 3
-</code></pre>
-<h3><a class="header" href="#出力例-3" id="出力例-3">出力例</a></h3>
-<pre><code>あきらさん
-</code></pre>
-<h2><a class="header" href="#解説-3" id="解説-3">解説</a></h2>
 <p>1時間は60分のため、hourの値に60をかけると答えが求められます。</p>
+<h3><a class="header" href="#実装例-2" id="実装例-2">実装例</a></h3>
 <pre><code class="language-py">hour = 3
 
 print(hour * 60)
@@ -350,34 +311,9 @@ print(hour * 60)
     });
 </script>
 <h1><a class="header" href="#no004-デートの服装---100" id="no004-デートの服装---100">No.004 デートの服装 - 100</a></h1>
-<h2><a class="header" href="#問題文-4" id="問題文-4">問題文</a></h2>
-<p>マー君は今週の土曜日にクーちゃんとデートの予定です。<br>
-しかし、マー君はお金持ちで毎週着る服が違うので第何週目の土曜日かで何を着るのか変わってきます。<br>
-第１土曜日にはポロシャツ<br>
-第２土曜日にはユニクロの半袖シャツ<br>
-第３土曜日にはGUの長袖シャツ<br>
-第４土曜日にはタンクトップ<br>
-を着ます。<br><br>
-それでは第何週目(week)の土曜日かを入力してマー君が何を着ていくのかをprintしてみましょう。<br><br>
-nは1から4の数字で、そうでない場合には「1から4の数字を入力してください」とprintしてください。</p>
-<h3><a class="header" href="#必要な変数-3" id="必要な変数-3">必要な変数</a></h3>
-<pre><code>week
-</code></pre>
-<h3><a class="header" href="#入力例1" id="入力例1">入力例.1</a></h3>
-<pre><code>week = 2
-</code></pre>
-<h3><a class="header" href="#出力例1" id="出力例1">出力例.1</a></h3>
-<pre><code>ユニクロの半袖シャツ
-</code></pre>
-<h3><a class="header" href="#入力例2" id="入力例2">入力例.2</a></h3>
-<pre><code>week = 5
-</code></pre>
-<h3><a class="header" href="#出力例2" id="出力例2">出力例.2</a></h3>
-<pre><code>1から4の数字を入力してください
-</code></pre>
-<h2><a class="header" href="#解説-4" id="解説-4">解説</a></h2>
 <p>if文を使って問題文の通りに条件分岐をしましょう。<br>
 1から4の数字でなかった場合の処理も忘れないように気をつけてください。</p>
+<h3><a class="header" href="#実装例-3" id="実装例-3">実装例</a></h3>
 <pre><code class="language-py">week = 3
 if week == 1:
     print(&quot;ポロシャツ&quot;)
@@ -391,55 +327,19 @@ else:
     print(&quot;1から4の数字を入力してください&quot;)
 </code></pre>
 <h1><a class="header" href="#no005-収穫量予想---100" id="no005-収穫量予想---100">No.005 収穫量予想 - 100</a></h1>
-<h2><a class="header" href="#問題文-5" id="問題文-5">問題文</a></h2>
-<p>太郎くんは、畑でニンジンを育てています。ニンジンの収穫量が気になる太郎くんは、畑の面積から予想することにしました。<br>
-畑の縦横の長さから、面積を求めるプログラムを作ろう。<br><br>
-【注意事項】<br>
-・単位はメートルとする<br>
-・畑は長方形もしくは正方形とする。<br>
-・長さを入力、面積を出力とする。<br></p>
-<h3><a class="header" href="#必要な変数-4" id="必要な変数-4">必要な変数</a></h3>
-<pre><code>base = 底辺
-height = 高さ
-</code></pre>
-<h3><a class="header" href="#入力例-4" id="入力例-4">入力例</a></h3>
-<pre><code>base = 5
-height = 10
-</code></pre>
-<h3><a class="header" href="#出力例-4" id="出力例-4">出力例</a></h3>
-<pre><code>50
-</code></pre>
-<h2><a class="header" href="#解説-5" id="解説-5">解説</a></h2>
 <p>畑の形が長方形とあることから、面積は底辺×高さで求めることができます。<br>
 以下のように実装すると掛け算をすることができます。</p>
+<h3><a class="header" href="#実装例-4" id="実装例-4">実装例</a></h3>
 <pre><code class="language-py">base = 5
 height = 10
 
 print(base * height)
 </code></pre>
 <h1><a class="header" href="#no006-偶数奇数判定---100" id="no006-偶数奇数判定---100">No.006 偶数・奇数判定 - 100</a></h1>
-<h2><a class="header" href="#問題文-6" id="問題文-6">問題文</a></h2>
-<p>マー君は奇数と偶数がわからない子のために奇数偶数判定機を作ることになりました。<br>
-ある数numが偶数ならば“偶数“、奇数ならば“奇数“と出力してください<br></p>
-<h3><a class="header" href="#必要な変数-5" id="必要な変数-5">必要な変数</a></h3>
-<pre><code>num
-</code></pre>
-<h3><a class="header" href="#入力例1-1" id="入力例1-1">入力例.1</a></h3>
-<pre><code>1
-</code></pre>
-<h3><a class="header" href="#出力例1-1" id="出力例1-1">出力例.1</a></h3>
-<pre><code>奇数
-</code></pre>
-<h3><a class="header" href="#入力例2-1" id="入力例2-1">入力例.2</a></h3>
-<pre><code>2
-</code></pre>
-<h3><a class="header" href="#出力例2-1" id="出力例2-1">出力例.2</a></h3>
-<pre><code>偶数
-</code></pre>
-<h2><a class="header" href="#解説-6" id="解説-6">解説</a></h2>
 <p>偶奇の判定は2で割った余りが1か0のどちらなのかを調べることによってできます。<br>
 余りが1なら奇数、余りが0なら偶数です。<br>
 以下のようにif文で条件分岐をすることによってこの問題を解くことができます。</p>
+<h3><a class="header" href="#実装例-5" id="実装例-5">実装例</a></h3>
 <pre><code class="language-py">num = 1
 
 if num % 2 == 1:
@@ -448,29 +348,8 @@ else:
     print(&quot;偶数&quot;)
 </code></pre>
 <h1><a class="header" href="#no007-ラッキーナンバー---100" id="no007-ラッキーナンバー---100">No.007 ラッキーナンバー - 100</a></h1>
-<h2><a class="header" href="#問題文-7" id="問題文-7">問題文</a></h2>
-<p>ラッキーナンバーというのはすごい力を持っていて、その日のラッキーナンバーのものを身につけておくだけで幸せにその日を過ごせるとマー君は信じています。<br>
-そんなある日、マー君は日付からラッキーナンバーを計算できることを知りました。<br>
-例えば、2020年6月13日だったら、その日のラッキーナンバーは2020+6+13のように年・月・日にちの数字を足した数字を１０で割った余りがその日のラッキーナンバーになります。<br>
-それでは年・月・日にちを入力して、今日のラッキーナンバーを計算してみましょう</p>
-<h3><a class="header" href="#必要な変数-6" id="必要な変数-6">必要な変数</a></h3>
-<pre><code># 年を入力
-y = 2000
-# 月を入力
-m = 7
-# 日にちを入力
-d =  23
-</code></pre>
-<h3><a class="header" href="#入力例-5" id="入力例-5">入力例</a></h3>
-<pre><code>y = 2000
-m = 7
-d =  23
-</code></pre>
-<h3><a class="header" href="#出力例-5" id="出力例-5">出力例</a></h3>
-<pre><code>0
-</code></pre>
-<h2><a class="header" href="#解説-7" id="解説-7">解説</a></h2>
 <p>年と月と日にちを足したあと、%を使って余りを求めます。</p>
+<h3><a class="header" href="#実装例-6" id="実装例-6">実装例</a></h3>
 <pre><code class="language-py">y = 2000
 m = 7
 d = 23
@@ -478,44 +357,16 @@ d = 23
 print((y + m + d) / 10)
 </code></pre>
 <h1><a class="header" href="#no008-お小遣い推定---200" id="no008-お小遣い推定---200">No.008 お小遣い推定 - 200</a></h1>
-<h2><a class="header" href="#問題文-8" id="問題文-8">問題文</a></h2>
-<p>太郎君は毎月お小遣いをもらい、お小遣いの約3割をユニセフに募金しています。<br>
-太郎君は慈善家ですが、秘密主義でお小遣いの額を他人には言いません。<br>
-そこで、あなたは太郎君を尾行して、募金額を見ることにしました。<br>
-募金額から、太郎君のお小遣いを推定するプログラムを作ろう。</p>
-<h3><a class="header" href="#必要な変数-7" id="必要な変数-7">必要な変数</a></h3>
-<pre><code>donate
-</code></pre>
-<h3><a class="header" href="#入力例-6" id="入力例-6">入力例</a></h3>
-<pre><code>donate = 1800
-</code></pre>
-<h3><a class="header" href="#出力例-6" id="出力例-6">出力例</a></h3>
-<pre><code>6000.0
-</code></pre>
-<h2><a class="header" href="#解説-8" id="解説-8">解説</a></h2>
 <p>問題文を読むと、求めたいお小遣いの3割に当たる金額が入力として与えられることが分かります。<br>
 つまり、入力された値を10/3倍することでこの問題を解くことができます。</p>
+<h3><a class="header" href="#実装例-7" id="実装例-7">実装例</a></h3>
 <pre><code class="language-py">donate = 1800
 
-print((donate / 3) * 10)
+print(donate * 10 / 3)
 </code></pre>
 <h1><a class="header" href="#no010-ポテチ---100" id="no010-ポテチ---100">No.010 ポテチ - 100</a></h1>
-<h2><a class="header" href="#問題文-9" id="問題文-9">問題文</a></h2>
-<p>みんな大好きポテチ。<br>
-でも、みんなも知っているようにポテチは、あんなに大きな袋にちょこっとしか入っていません。そんなある日、マー君は、ポテチの重さから一袋に何枚のポテチが入っているのか推測することを思いつきました。結果的に、一番ポテチの多い袋を見つけられるということです。<br>
-例えば、ポテチ1枚の重さを5gをすると、一袋50gの場合、合計10枚のポテチが入っていることを推測できます。<br>
-それでは、実際に袋の重さからその袋に何枚のポテチが入っているかを確認するコードを書きましょう。</p>
-<h3><a class="header" href="#必要な変数-8" id="必要な変数-8">必要な変数</a></h3>
-<pre><code>weight
-</code></pre>
-<h3><a class="header" href="#入力例-7" id="入力例-7">入力例</a></h3>
-<pre><code>weight = 500
-</code></pre>
-<h3><a class="header" href="#出力例-7" id="出力例-7">出力例</a></h3>
-<pre><code>100.0
-</code></pre>
-<h2><a class="header" href="#解説-9" id="解説-9">解説</a></h2>
 <p>5gで一枚なので、全体の重さを5で割ると答えを求めることができます。</p>
+<h3><a class="header" href="#実装例-8" id="実装例-8">実装例</a></h3>
 <pre><code class="language-py">weight = 500
 
 print(weight / 5)
@@ -530,32 +381,9 @@ print(weight / 5)
     });
 </script>
 <h1><a class="header" href="#no167-何通り---100" id="no167-何通り---100">No.167 何通り？ - 100</a></h1>
-<h2><a class="header" href="#問題文-10" id="問題文-10">問題文</a></h2>
-<p>ピッピくんとらいむくんはテトリスをして遊んでいます。<br>
-15回勝負をして、勝った回数が多い方がジュースをもらえます。<br>
-今ピッピくんはA回、らいむくんはB回勝っています。<br>
-ピッピくんはどうしてもジュースが欲しいので、最小で何回勝てばジュースをもらえるか知りたくなりました。<br>
-ピッピくんが最小であと何回勝つ必要があるか教えてあげるプログラムをつくろう。</p>
-<h3><a class="header" href="#制約-1" id="制約-1">制約</a></h3>
-<ul>
-<li>$1 \leqq A \leqq 7$</li>
-<li>$1 \leqq B \leqq 7$</li>
-</ul>
-<h3><a class="header" href="#必要な変数-9" id="必要な変数-9">必要な変数</a></h3>
-<pre><code>A
-B
-</code></pre>
-<h3><a class="header" href="#入力例-8" id="入力例-8">入力例</a></h3>
-<pre><code>A = 4
-B = 5
-</code></pre>
-<h3><a class="header" href="#出力例-8" id="出力例-8">出力例</a></h3>
-<pre><code>7
-</code></pre>
-<h2><a class="header" href="#解説-10" id="解説-10">解説</a></h2>
 <p>問題文をよく読むと、「15回勝負をする」と書いてあります。つまり、8回勝てばその時点でピッピ君の勝利です。<br>
-また、制約にAとBが7以下であると書いてあることから、単純に8-Aを計算すれば答えが出せることになります。(Bの数値は使わなくても答えが出せます。)<br>
-実装例は以下の通りです。</p>
+また、制約にAとBが7以下であると書いてあることから、単純に8-Aを計算すれば答えが出せることになります。(Bの数値は使わなくても答えが出せます。)<br></p>
+<h3><a class="header" href="#実装例-9" id="実装例-9">実装例</a></h3>
 <pre><code class="language-py">A = 4
 B = 5
 
@@ -571,28 +399,6 @@ print(8 - A)
     });
 </script>
 <h1><a class="header" href="#no184-何通り---500" id="no184-何通り---500">No.184 何通り？ - 500</a></h1>
-<h2><a class="header" href="#問題文-11" id="問題文-11">問題文</a></h2>
-<p>ピッピ君は駄菓子屋でお菓子を買おうとしています。<br>
-この駄菓子屋では、2つのお菓子を買って、その値段が100円以上のとき、アヒルの人形がおまけとしてついてきます。<br>
-ピッピ君はアヒルが大好きなので、どのような買い方をすればアヒルの人形をもらえるか知りたくなりました。<br>
-お菓子の種類はn種類で、その値段がsnackという配列で与えられるので、アヒルの人形をもらえる買い方が何通りあるか調べるプログラムを作ってください。<br>
-同じお菓子を2つ買うこともできます。</p>
-<h3><a class="header" href="#制約-2" id="制約-2">制約</a></h3>
-<p>・お菓子の種類は30種類以内<br>
-・お菓子の値段は全て100円未満</p>
-<h3><a class="header" href="#必要な変数-10" id="必要な変数-10">必要な変数</a></h3>
-<pre><code>n
-snack
-</code></pre>
-<h3><a class="header" href="#入力例-9" id="入力例-9">入力例</a></h3>
-<pre><code>n = 3
-snack = [60, 40, 70]
-</code></pre>
-<h3><a class="header" href="#出力例-9" id="出力例-9">出力例</a></h3>
-<pre><code>5
-</code></pre>
-<p><code>[60, 60], [60, 40], [60, 70], [40, 70], [70, 70]</code>の5通りの選び方が考えられます。</p>
-<h2><a class="header" href="#解説-11" id="解説-11">解説</a></h2>
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <script type="text/x-mathjax-config">
@@ -604,35 +410,7 @@ snack = [60, 40, 70]
  });
 </script>
 <h1><a class="header" href="#no220-coprime---500" id="no220-coprime---500">No.220 Coprime - 500</a></h1>
-<h2><a class="header" href="#問題文-12" id="問題文-12">問題文</a></h2>
-<p>ピッピ君は2つの整数AとBを見つけました。<br>
-AをB回掛けた数(AのB乗)と、BをA回掛けた数(BのA乗)が互いに素であるか判定してください。<br>
-互いに素な場合はYes、互いに素でない場合はNoと出力してください。<br>
-※この問題、制約で5秒以内に実行可能なプログラムは作成可能です。</p>
-<h3><a class="header" href="#制約-3" id="制約-3">制約</a></h3>
-<ul>
-<li>$1 \leqq A, B \leqq 10^9$</li>
-</ul>
-<h3><a class="header" href="#必要な変数-11" id="必要な変数-11">必要な変数</a></h3>
-<pre><code>A
-B
-</code></pre>
-<h3><a class="header" href="#入力例1-2" id="入力例1-2">入力例.1</a></h3>
-<pre><code>A = 2
-B = 5
-</code></pre>
-<h3><a class="header" href="#出力例1-2" id="出力例1-2">出力例.1</a></h3>
-<pre><code>Yes
-</code></pre>
-<h3><a class="header" href="#入力例2-2" id="入力例2-2">入力例.2</a></h3>
-<pre><code>A = 10
-B = 8
-</code></pre>
-<h3><a class="header" href="#出力例2-2" id="出力例2-2">出力例.2</a></h3>
-<pre><code>No
-</code></pre>
-<h2><a class="header" href="#解説-12" id="解説-12">解説</a></h2>
-<h3><a class="header" href="#誤答例" id="誤答例">誤答例</a></h3>
+<h2><a class="header" href="#誤答例" id="誤答例">誤答例</a></h2>
 <p>単純な解法としては実際に$A^B$、$B^A$を計算し、<br>
 その最大公約数が1かどうか判定する方法が考えられます。<br>
 この場合、次のようなコードになります。</p>
@@ -650,11 +428,11 @@ else:
 <img src="https://storage.googleapis.com/zenn-user-upload/7y8sg3bxg0q6cq2vswzau240nk1i" alt="" />
 長い時間待っても答え合わせが終わりません。
 何が起こっているのでしょうか。</p>
-<h3><a class="header" href="#出てくる数字について" id="出てくる数字について">出てくる数字について</a></h3>
+<h2><a class="header" href="#出てくる数字について" id="出てくる数字について">出てくる数字について</a></h2>
 <p>この問題では制約が$1 \leqq A, B \leqq 10^9$となっています。<br>
 この場合、$A^B$を計算する時に最大で$10^{9 \times 10^9}$という途方もない数値になってしまいます。<br>
 トイプロでは処理に5秒以上かかる場合、答え合わせが中断されるようになっているため、この解法では問題を解けないということになります。</p>
-<h3><a class="header" href="#想定解" id="想定解">想定解</a></h3>
+<h2><a class="header" href="#想定解" id="想定解">想定解</a></h2>
 <p>「$A^B$と$B^A$が互いに素であるか」という問題を言い換えることはできないでしょうか？
 実は、互いに素である整数の性質として、以下のようなものがあります。</p>
 <blockquote>
@@ -664,8 +442,8 @@ $また、逆にA^nとB^mが互いに素であるならば、AとBも互いに�
 </blockquote>
 <p>これはAとBが互いに素である場合、共通の素因数を持っていないということであり、<br>
 ある数字をべき乗してもその素因数の種類は変わらないという性質から導くことができます。<br><br>
-さて、以上のことを踏まえると、$A^B$と$B^A$が互いに素か判定するには$A$と$B$が互いに素か判定すれば良いということになります。<br>
-実装例は以下の通りです。</p>
+さて、以上のことを踏まえると、$A^B$と$B^A$が互いに素か判定するには$A$と$B$が互いに素か判定すれば良いということになります。<br></p>
+<h3><a class="header" href="#実装例-10" id="実装例-10">実装例</a></h3>
 <pre><code class="language-python">import math
 
 A = 2

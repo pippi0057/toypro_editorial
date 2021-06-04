@@ -133,26 +133,12 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#no008-お小遣い推定---200" id="no008-お小遣い推定---200">No.008 お小遣い推定 - 200</a></h1>
-<h2><a class="header" href="#問題文" id="問題文">問題文</a></h2>
-<p>太郎君は毎月お小遣いをもらい、お小遣いの約3割をユニセフに募金しています。<br>
-太郎君は慈善家ですが、秘密主義でお小遣いの額を他人には言いません。<br>
-そこで、あなたは太郎君を尾行して、募金額を見ることにしました。<br>
-募金額から、太郎君のお小遣いを推定するプログラムを作ろう。</p>
-<h3><a class="header" href="#必要な変数" id="必要な変数">必要な変数</a></h3>
-<pre><code>donate
-</code></pre>
-<h3><a class="header" href="#入力例" id="入力例">入力例</a></h3>
-<pre><code>donate = 1800
-</code></pre>
-<h3><a class="header" href="#出力例" id="出力例">出力例</a></h3>
-<pre><code>6000.0
-</code></pre>
-<h2><a class="header" href="#解説" id="解説">解説</a></h2>
 <p>問題文を読むと、求めたいお小遣いの3割に当たる金額が入力として与えられることが分かります。<br>
 つまり、入力された値を10/3倍することでこの問題を解くことができます。</p>
+<h3><a class="header" href="#実装例" id="実装例">実装例</a></h3>
 <pre><code class="language-py">donate = 1800
 
-print((donate / 3) * 10)
+print(donate * 10 / 3)
 </code></pre>
 
                     </main>
